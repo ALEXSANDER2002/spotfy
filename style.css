@@ -1,0 +1,240 @@
+:root {
+	/* Variáveis de cores */
+	--default-green: #1db954;
+	--light-green: #1ed760;
+}
+
+* {
+	/* Define o box-sizing para incluir bordas e padding no cálculo das dimensões */
+	box-sizing: border-box;
+	/* Remove margens e padding padrão */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* Define a fonte padrão do corpo */
+	font-family: "Roboto", sans-serif;
+}
+
+/* Classes utilitárias */
+.btn-primary {
+	/* Estilização do botão principal */
+	background: var(--default-green);
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 60px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+	/* Estilização do botão principal ao passar o mouse */
+	background: var(--light-green);
+	cursor: pointer;
+}
+
+.logo {
+	/* Estilização da logo */
+	height: 40px;
+	width: auto;
+}
+
+/* Navbar */
+#navbar {
+	/* Estilização da barra de navegação */
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.078);
+	color: white;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#navbar .navbar-container {
+	/* Contêiner da barra de navegação */
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+	/* Estilização da lista de itens na barra de navegação */
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+	/* Estilização dos itens na barra de navegação */
+	padding: 0 20px;
+	transition: all 300ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+	/* Estilização dos itens na barra de navegação ao passar o mouse */
+	color: #1db954;
+	cursor: pointer;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+	/* Estilização do terceiro item da barra de navegação */
+	border-right: 1px solid white;
+}
+
+/* Showcase */
+#showcase {
+	/* Estilização da seção de destaque */
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: url("https://midias.agazeta.com.br/2022/12/06/neymar-usa-fone-de-ouro-personalizado--924775.jpg") center center/cover;
+	background-color: rgba(13, 12, 12, 0.467);
+	background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+	/* Contêiner da seção de destaque */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#showcase .showcase-container h2 {
+	/* Estilização do título na seção de destaque */
+	font-size: 5rem;
+}
+
+#showcase .showcase-container p {
+	/* Estilização do parágrafo na seção de destaque */
+	margin: 15px 0;
+	font-size: 1.1rem;
+}
+
+/* Footer */
+#footer {
+	/* Estilização do rodapé */
+	background: rgb(1, 1, 1);
+	color: rgb(244, 236, 236);
+	padding: 80px 0;
+}
+
+#footer .footer-content {
+	/* Contêiner do conteúdo do rodapé */
+	display: flex;
+	width: 60%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu {
+	/* Estilização das listas de menus no rodapé */
+	margin: 0 60px;
+	list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+	/* Estilização dos itens dos menus no rodapé */
+	margin: 25px 0;
+	transition: all 300ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+	/* Estilização dos itens dos menus no rodapé ao passar o mouse */
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+#footer .footer-content .footer-menu p {
+	/* Estilização dos títulos dos menus no rodapé */
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #919496;
+	font-size: 0.8rem;
+}
+
+/* Footer Socials */
+.socials {
+	/* Estilização da seção de redes sociais no rodapé */
+	display: flex;
+}
+
+.socials i {
+	/* Estilização dos ícones de redes sociais no rodapé */
+	margin: 0 20px;
+	font-size: 1.7rem;
+	transition: all 300ms ease;
+}
+
+.socials i:hover {
+	/* Estilização dos ícones de redes sociais no rodapé ao passar o mouse */
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+/* Footer Info */
+.footer-info {
+	/* Estilização das informações adicionais no rodapé */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 60%;
+	margin: auto;
+	font-weight: bold;
+	color: #919496;
+	font-size: 0.75rem;
+	padding-top: 50px;
+}
+
+.footer-info .footer-info-items {
+	/* Estilização das listas de informações adicionais no rodapé */
+	display: flex;
+	list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+	/* Estilização dos itens de informações adicionais no rodapé */
+	margin: 0 10px;
+	transition: all 300ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover {
+	/* Estilização dos itens de informações adicionais no rodapé ao passar o mouse */
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.footer-info .rights .country {
+	/* Estilização da seção do país no rodapé */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.footer-info .rights .country p {
+	/* Estilização do texto do país no rodapé */
+	transition: all 300ms ease;
+}
+
+.footer-info .rights .country p:hover {
+	/* Estilização do texto do país no rodapé ao passar o mouse */
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.footer-info .rights .country .brazil-flag {
+	/* Estilização da bandeira do Brasil no rodapé */
+	height: 20px;
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
+}
